@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PrimeiroTest</string>
+    <string name="Button_value1">1</string>
+    <string name="Button_value2">2</string>
+    <string name="Button_value3">3</string>
+    <string name="Button_value4">4</string>
+    <string name="Button_value5">5</string>
+    <string name="Button_value6">6</string>
+    <string name="Button_value7">7</string>
+    <string name="Button_value8">8</string>
+    <string name="Button_value9">9</string>
+    <string name="Button_value_0">0</string>
+    <string name="Button_value_Plus">+</string>
+    <string name="Button_value_Subtraction">-</string>
+    <string name="Button_value_Multiplication">*</string>
+    <string name="Button_value_Division">/</string>
+    <string name="Button_value_equal">=</string>
+    <string name="image">image </string>
+    <string name="value_1">1</string>
+</resources>

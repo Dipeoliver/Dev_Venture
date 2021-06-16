@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/image"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textlines"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/margi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Plus"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value_Plus"
+                 />
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value7" />
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value4" />
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Subtraction"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value_Subtraction" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value8" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value5" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Multiplication"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value_Multiplication" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value9" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value6" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/button"
+                android:layout_width="@dimen/layout_width"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="@dimen/layout_weight"
+                android:background = "@drawable/roundedbutton"
+                android:text="@string/Button_value3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_Division"
+                    style="@style/button"
+                    android:layout_width="@dimen/layout_width"
+                    android:layout_height="@dimen/layout_height"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:layout_weight="@dimen/layout_weight"
+                    android:background = "@drawable/roundedbutton"
+                    android:text="@string/Button_value_Division" />
+
+                <Button
+                    android:id="@+id/btn_equal"
+                    style="@style/button"
+                    android:layout_width="@dimen/layout_width"
+                    android:layout_height="@dimen/layout_height"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:layout_weight="@dimen/layout_weight"
+                    android:background = "@drawable/roundedbutton"
+                    android:text="@string/Button_value_equal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_0"
+                    style="@style/button"
+                    android:layout_width="@dimen/layout_width"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:layout_weight="@dimen/layout_weight"
+                    android:background = "@drawable/roundedbutton"
+                    android:text="@string/Button_value_0" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

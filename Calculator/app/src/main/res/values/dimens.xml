@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Size20">20sp</dimen>
+    <dimen name="layout_width">match_parent</dimen>
+    <dimen name="layout_height">match_parent</dimen>
+    <dimen name="layout_margin">3dp</dimen>
+    <dimen name="layout_weight">25</dimen>
+</resources>
