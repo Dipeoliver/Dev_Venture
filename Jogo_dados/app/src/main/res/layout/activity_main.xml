@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_jogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_red_color_state"
+        android:text="@string/button_jogar"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageView
+        android:id="@+id/dado01"
+        android:layout_width="194dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dado02"
+        app:layout_constraintEnd_toStartOf="@+id/dado02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dado02"
+        android:layout_width="123dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dado01"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
