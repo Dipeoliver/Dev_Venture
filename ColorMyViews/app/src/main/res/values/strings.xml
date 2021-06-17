@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ColorMyViews</string>
+    <string name="button_red">Red</string>
+    <string name="button_yellow">Yellow</string>
+    <string name="button_green">Green</string>
 </resources>

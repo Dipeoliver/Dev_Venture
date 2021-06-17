@@ -4,30 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/boxOne"
         style="@style/whiteBox"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto"
         android:text="Box One"
-        app:layout_constraintBottom_toTopOf="@+id/boxTwo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/boxTwo"
         style="@style/whiteBox"
         android:layout_width="@dimen/box_two_width"
-        android:layout_height="@dimen/box_two_height"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:text="Box two"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/boxOne" />
+        app:layout_constraintStart_toStartOf="@+id/boxOne"
+        app:layout_constraintTop_toBottomOf="@+id/boxOne" />
 
     <TextView
         android:id="@+id/boxThree"
@@ -72,7 +72,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.30
+        app:layout_constraintGuide_percent="0.3
 " />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/button_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_yellow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/button_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonRed" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="@string/button_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_yellow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
