@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Jogo_dados</string>
     <string name="button_jogar">Jogar</string>
+    <string name="Player">Start</string>
+    <string name="UserName">User Name</string>
+    <string name="Welcome">Seja Bem Vindo %s</string>
 </resources>

@@ -1,0 +1,22 @@
+https://stackoverflow.com/questions/2661536/how-to-programmatically-take-a-screenshot-on-android
+
+https://www.geeksforgeeks.org/how-to-capture-screenshot-of-a-view-and-save-it-to-gallery-in-android/
+
+https://ssaurel.medium.com/taking-a-screenshot-programmatically-in-android-apps-67619cb80bf8
+
+https://blog.mindorks.com/how-to-programmatically-take-a-screenshot-on-android
+
+https://stackoverflow.com/questions/30196965/how-to-take-a-screenshot-of-a-current-activity-and-then-share-it
+
+
+
+ideia de como fazer a aplicação
+
+da minha activity gerar uma bitmap
+
+guarda o bitmap no sistema
+
+ter criar um identificador para o bitmap usando ideia do RI
+passar o identificador para intent.
+
+ e passa o RI para a intent
