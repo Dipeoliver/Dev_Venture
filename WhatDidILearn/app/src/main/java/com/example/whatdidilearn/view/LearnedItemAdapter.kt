@@ -9,30 +9,17 @@ import com.example.whatdidilearn.R
 import com.example.whatdidilearn.data.LearnedItem
 
 class LearnedItemAdapter: RecyclerView.Adapter <LearnedItemAdapter.LearnedItemViewHolder>(){
-
     // recebe valores da MainActivity
     var learnedItems = listOf<LearnedItem>()
 
-
-    inner class LearnedItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-      private val titleContainer: TextView = itemView.findViewById(R.id.learnedItemTitle)
-      private val descriptionContainer: TextView = itemView.findViewById(R.id.learnedItemDescription)
-     // private val learned: view = itemView.findViewById(R.id.learned)
-
-        fun bind(learnedItem: LearnedItem) {
-            titleContainer.text = learnedItem.name
-            descriptionContainer.text = learnedItem.description
-            //barracor.back(R.color)
-        }
-
+    set(value) {
+        field = value
+        notifyDataSetChanged()
     }
 
     // inflate retorna uma view
     // retornando para a view meu layout inflado
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): LearnedItemAdapter.LearnedItemViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): LearnedItemAdapter.LearnedItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.learned,parent,false)
         return  LearnedItemViewHolder(view)
@@ -47,10 +34,28 @@ class LearnedItemAdapter: RecyclerView.Adapter <LearnedItemAdapter.LearnedItemVi
         holder.bind(learnedItem)
     }
 
-
-    // precisa responder (quantidade de itens que tem na lista)
+    //  (quantidade de itens que tem na lista)
     override fun getItemCount(): Int {
         return learnedItems.size
     }
 
+    inner class LearnedItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+        private val viewInflate =itemView.findViewById(R.id.learnedview) as View
+        private val titleContainer: TextView = itemView.findViewById(R.id.learnedItemTitle)
+        private val descriptionContainer: TextView = itemView.findViewById(R.id.learnedItemDescription)
+
+
+        fun bind(learnedItem: LearnedItem) {
+            titleContainer.text = learnedItem.name
+            descriptionContainer.text = learnedItem.description
+
+            when (learnedItem.understandingLevel.toString()) {
+                "LOW" -> viewInflate.setBackgroundResource(R.color.red)
+                "HIGH" -> viewInflate.setBackgroundResource(R.color.green)
+                "MEDIUM" -> viewInflate.setBackgroundResource(R.color.yellow)
+            }
+        }
+
+    }
 }

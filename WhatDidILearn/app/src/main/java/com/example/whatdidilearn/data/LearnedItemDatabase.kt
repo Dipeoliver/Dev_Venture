@@ -2,7 +2,7 @@ package com.example.whatdidilearn.data
 
 object LearnedItemDatabase {
 
-    public fun getAll(): List<LearnedItem> {
+     fun getAll(): List<LearnedItem> {
         return listOf(
             LearnedItem(name = "Kotlin", description = "Linguagem kotlin para Android", understandingLevel = UnderstandingLevel.HIGH),
             LearnedItem(name = "RecyclerView", description = "Listas em Android", understandingLevel = UnderstandingLevel.MEDIUM),

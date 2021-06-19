@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WhatDidILearn</string>
+    <string name="kotlin_collections">Kotlin Collections</string>
+    <string name="text_description">The Kotlin standard library provides a set of extension functions for collection transformations. These functions build new collections from existing ones based on the transformation rules provided. In this page, we\'ll give an overview of the available collection transformation functions.</string>
 </resources>
