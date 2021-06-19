@@ -41,7 +41,7 @@ class LearnedItemAdapter: RecyclerView.Adapter <LearnedItemAdapter.LearnedItemVi
 
     inner class LearnedItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        private val viewInflate =itemView.findViewById(R.id.learnedview) as View
+        private val viewInflate: View = itemView.findViewById(R.id.learnedview)
         private val titleContainer: TextView = itemView.findViewById(R.id.learnedItemTitle)
         private val descriptionContainer: TextView = itemView.findViewById(R.id.learnedItemDescription)
 
@@ -49,6 +49,8 @@ class LearnedItemAdapter: RecyclerView.Adapter <LearnedItemAdapter.LearnedItemVi
         fun bind(learnedItem: LearnedItem) {
             titleContainer.text = learnedItem.name
             descriptionContainer.text = learnedItem.description
+            viewInflate.setBackgroundResource(R.color.red)
+
 
             when (learnedItem.understandingLevel.toString()) {
                 "LOW" -> viewInflate.setBackgroundResource(R.color.red)

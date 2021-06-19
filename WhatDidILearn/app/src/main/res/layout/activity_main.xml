@@ -11,10 +11,10 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absolutex="1dp"
-        tools:layout_editor_absolutey="1dp"
-
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:layout_editor_absolutex="1dp"
+
+        tools:layout_editor_absolutey="1dp"
         tools:listitem="@layout/learned" />
 
 </LinearLayout>
