@@ -6,5 +6,5 @@ import com.bigodecompany.whatdidilearn.data.LearnedItemRepository
 import com.bigodecompany.whatdidilearn.entities.LearnedItem
 
 class MainViewModel(private val repository: LearnedItemRepository) : ViewModel() {
-    val leardItems: LiveData<List<LearnedItem>> = repository.learnedItems
+    val learnedItems: LiveData<List<LearnedItem>> = repository.learnedItems
 }

@@ -4,6 +4,6 @@ import com.bigodecompany.whatdidilearn.R
 
 enum class UnderstandingLevel(val color: Int) {
     LOW(R.color.yellow),
-    MEDIUM(R.color.green),
-    HIGH(R.color.blue)
+    MEDIUM(R.color.orange),
+    HIGH(R.color.red)
 }

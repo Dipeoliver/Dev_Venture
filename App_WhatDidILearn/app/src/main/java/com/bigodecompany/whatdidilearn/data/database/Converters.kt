@@ -14,8 +14,8 @@ class Converters {
         return when (int) {
             UnderstandingLevel.LOW.ordinal -> UnderstandingLevel.LOW
             UnderstandingLevel.MEDIUM.ordinal -> UnderstandingLevel.MEDIUM
-            UnderstandingLevel.HIGH.ordinal -> UnderstandingLevel.MEDIUM
-            else -> UnderstandingLevel.MEDIUM
+            else -> UnderstandingLevel.HIGH
+            //else -> UnderstandingLevel.MEDIUM
         }
     }
 }

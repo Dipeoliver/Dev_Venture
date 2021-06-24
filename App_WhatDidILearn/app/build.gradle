@@ -72,4 +72,9 @@ dependencies {
     // UI
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+    //KOIN
+    implementation "io.insert-koin:koin-android:$rootProject.koinVersion"
+    implementation "io.insert-koin:koin-androidx-scope:$rootProject.koinVersion"
+    implementation "io.insert-koin:koin-androidx-viewmodel:$rootProject.koinVersion"
 }
