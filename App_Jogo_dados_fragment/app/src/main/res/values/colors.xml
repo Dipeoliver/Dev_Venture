@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="darkerGreen">#134715</color>
+    <color name="verdeclaro">#95E498</color>
+    <color name="verdenoturno">#024004</color>
+
+
 </resources>

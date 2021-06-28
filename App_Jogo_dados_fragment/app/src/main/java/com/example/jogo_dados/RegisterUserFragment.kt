@@ -20,7 +20,7 @@ class RegisterUserFragment : Fragment() {
         //pegamos o retorno da variavel inflate e colocamos na binding
         binding = FragmentRegisterUserBinding.inflate(inflater,container,false)
 
-        val playerName = binding?.editTextPlayerName
+        val playerName = binding?.editTextPlayerName ?:"Jogador 1"
         val buttonInit = binding?.buttonEntrar
 
         buttonInit?.setOnClickListener{
