@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">WhatsAppClone</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="WelcomeMessage">Bem-vindo(a) ao WhatsApp Clone</string>
-    <string name="login">Entrar</string>
-    <string name="message">Toque em "Entrar" para continuar</string>
-    <string name="privatemessage">Termos de serviços e Politica de privacidade WhatsAppClone.</string>
-</resources>
