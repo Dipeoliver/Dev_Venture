@@ -2,6 +2,8 @@ package com.example.zapzapventure
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -26,9 +28,13 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_conf
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_conf,R.id.navigation_exit
+
+
             )
+
         )
+
         binding.btnSair.setOnClickListener {
             AuthUI.getInstance().signOut(this).addOnCompleteListener {
                 val intent = Intent(this, LoginActivity::class.java)
@@ -36,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }
+
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)

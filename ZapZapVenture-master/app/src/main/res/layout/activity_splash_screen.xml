@@ -5,28 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/backgroundventure"
+    android:background="@drawable/img"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="239dp"
-        android:layout_height="213dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="117dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
         app:srcCompat="@drawable/logozapventure" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="287dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
+        android:layout_marginBottom="156dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="ZapZapVenture"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:text="ZapZap Venture"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +38,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/aclonica"
         android:text="Fofoca em um so lugar"
         android:textColor="@color/pink"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent" />
 
 

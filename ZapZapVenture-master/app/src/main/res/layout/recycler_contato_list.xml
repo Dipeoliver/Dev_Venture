@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/contact_image"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         tools:text="Nome Completo"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/contact_image"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +32,7 @@
         android:id="@+id/contact_details"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/contact_image"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,7 @@
         android:id="@+id/divider2"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:backgroundTint="@color/purple_500"
         android:layout_marginTop="16dp"
         android:background="@color/teal_700"
         app:layout_constraintEnd_toEndOf="@+id/contact_details"
